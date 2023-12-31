@@ -25,10 +25,6 @@ function getParameterByName(name) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-if (!fromParameter || !toParameter) {
-  window.location.href = "index.html?from=Ravi%20pandey&to=shweta%20bandawane";
-}
-
 var fromParameter = getParameterByName("to");
 var toParameter = getParameterByName("from");
 

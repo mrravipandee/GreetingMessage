@@ -10,6 +10,10 @@
     <!-- Fonts -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,6 +23,7 @@
             <p class="msg">As we step into 2024, I wish you a year filled with laughter, love, and endless
                 possibilities. Happy New Year to you and your family!</p>
             <h3 class="to">Radhe</h3>
+            <i class="fa-solid fa-copy" id="copyBtn"></i>
         </div>
         <div class="btn-msg" onclick="window.open('share.html', '_blank')">
             <div class="btn-share">
@@ -27,6 +32,21 @@
                 </div>
             </div>
         </div>
+        <script>
+            document.getElementById('copyBtn').addEventListener('click', function() {
+              // Get the current URL
+              var currentUrl = window.location.href;
+        
+              // Copy the URL to the clipboard
+              navigator.clipboard.writeText(currentUrl)
+                .then(function() {
+                  alert('URL copied to clipboard!');
+                })
+                .catch(function(err) {
+                  console.error('Unable to copy to clipboard', err);
+                });
+            });
+          </script>
     </div>
     <!-- JS -->
     <script src="./assets/JS/app.js"></script>

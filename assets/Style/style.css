@@ -44,6 +44,21 @@
     text-transform: capitalize;
 }
 
+#copyBtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2f2f2f;
+    background: rgba(225, 225, 225, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+}
+
+#copyBtn:active, #copyBtn:hover {
+    color: #FFF;
+}
+
 .btn-msg {
     overflow: hidden;
     position: fixed;
@@ -192,4 +207,20 @@ form {
         right: 20px;
         bottom: 20px;
     }
+
+    #copyBtn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #2f2f2f;
+        background: rgba(225, 225, 225, 0.2);
+        padding: 10px;
+        border-radius: 50%;
+        position: fixed;
+        right: 20px;
+    }
+
+    #copyBtn:active, #copyBtn:hover {
+        color: #FFF;
+    }
+
 }
